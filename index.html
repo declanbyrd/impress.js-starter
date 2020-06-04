@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./presentation.css" />
+  <title>Impress.js Starter Template</title>
+</head>
+
+<body class="impress-not-supported">
+
+  <!-- If the browser does not support impress.js features then display a fallback message -->
+
+  <div class="fallback-message" role="status">
+    <p>
+      Your browser <b>doesn't support the features required</b> by impress.js,
+      so you are presented with a simplified version of this presentation.
+    </p>
+    <p>
+      For the best experience please use the latest <b>Chrome</b>,
+      <b>Safari</b> or <b>Firefox</b> browser.
+    </p>
+  </div>
+
+  <!-- The presentation -->
+
+  <main id="impress">
+
+    <article class="step " data-x="-1500" data-y="-1500" id="title">
+      <h1>Presentation Title</h1>
+      <h2>Subtitle</h2>
+      </div>
+    </article>
+
+
+    <article class="step " data-x="0" data-y="-1500" id="secondSlide">
+      <h1>How does this work?</h1>
+      <ul>
+        <li><code>impress.js</code> treats the webpage as one giant 3D canvas.</li>
+        <li>Each slide is absolutely positioned using <code>data-x</code>, <code>data-y</code> and <code>data-z</code>
+          attributes.</li>
+        <li>The <code>id</code> attribute updates the url so that individual slides can be linked to.</li>
+      </ul>
+    </article>
+
+
+    <article class="step " data-x="1500" data-y="-1500" id="thirdSlide">
+      <h1>What can go in each slide?</h1>
+      <p>What is shown in each slide is only limited by the capabilities of the web and your own imagination ✨.</p>
+    </article>
+
+
+  </main>
+</body>
+
+<!-- Import impress.js from a CDN and initialise it -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/impress.js@1.1.0/js/impress.min.js"></script>
+<script type="text/javascript">
+  impress().init();
+</script>
+
+</html>
